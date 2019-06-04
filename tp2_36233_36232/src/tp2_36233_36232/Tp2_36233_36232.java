@@ -7,7 +7,8 @@ package tp2_36233_36232;
 
 /**
  *
- * @author gaofeng
+ * @author Francisco José Silva de Azevedo , a36232 , EI
+ * @author Gaofeng Yin , a36233 , EI
  */
 public class Tp2_36233_36232 {
 

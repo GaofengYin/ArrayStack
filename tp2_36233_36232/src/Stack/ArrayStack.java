@@ -7,7 +7,8 @@ package Stack;
 
 /**
  *
- * @author gaofeng
+ * @author Francisco José Silva de Azevedo , a36232 , EI
+ * @author Gaofeng Yin , a36233 , EI
  */
 public class ArrayStack<E> implements Stack<E> {
 
