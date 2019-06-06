@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package tp2_36233_36232;
-
+import Stack.ArrayStack;
+import Stack.Stack;
 /**
  *
  * @author Francisco José Silva de Azevedo , a36232 , EI
