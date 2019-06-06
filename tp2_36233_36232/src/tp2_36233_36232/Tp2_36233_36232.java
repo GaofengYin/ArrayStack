@@ -20,26 +20,18 @@ public class Tp2_36233_36232 {
         Stack<Character> stack = new ArrayStack<>();
 
         for (int i = 0; i < str.length(); i++) {
-
-            char ch = str.charAt(i);
-
-            if (ch == '[' || ch == '(' || ch == '{') {
-
-                stack.push(ch);
-
-            } else if ((ch == ']' || ch == '}' || ch == ')') && (!stack.isEmpty())) {
-
-                if (((char) stack.top() == '(' && ch == ')') || ((char) stack.top() == '{' && ch == '}') || ((char) stack.top() == '[' && ch == ']')) {
+            char inic = str.charAt(i);
+            if (inic == '[' || inic == '(' || inic == '{') {
+                stack.push(inic);
+            } else if ((inic == ']' || inic == '}' || inic == ')') && (!stack.isEmpty())) {
+                if (((char) stack.top() == '(' && inic == ')') || ((char) stack.top() == '{' && inic == '}') || ((char) stack.top() == '[' && inic == ']')) {
                     stack.pop();
                 } else {
                     return "False";
                 }
             } else {
-
-                if ((ch == ']' || ch == '}' || ch == ')')) {
-
+                if ((inic == ']' || inic == '}' || inic == ')')) {
                     return "False";
-
                 }
             }
         }
@@ -51,16 +43,15 @@ public class Tp2_36233_36232 {
     }
 
     public static void main(String[] args) {
-        String[] str = {"([{}])","(["};
+
+        String str[] = {"(abcd)", "{f>{e>{d>{a<b}}", "{7+{6-{5+{2+2}}})", "{{b{ana}}na}(m)", "{j{d{m}d}](m)", "{{}}([]){}{}{}{}{[[[[]]]]}"};
         int i;
-        if (str == null) {
-            System.out.println("Empty String");
+        if (str.length == 0) {
+            System.out.println("String esta vazia.");
             return;
         }
-        for(i=0; i<2; i++){
-            System.out.println("Integridade dos parêntesis " + str[i]+ " ? : " + verificaIntigridade(str[i]));
-        } 
-        
+        for (i = 0; i < str.length; i++) {
+            System.out.println("Integridade dos parêntesis " + str[i] + " ? : " + verificaIntigridade(str[i]));
+        }
     }
-
 }
