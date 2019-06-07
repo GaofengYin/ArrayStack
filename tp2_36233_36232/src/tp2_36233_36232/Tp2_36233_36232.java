@@ -20,7 +20,7 @@ public class Tp2_36233_36232 {
     /**
      * Metodo para verificar integridade dos parenteses.
      * Este metodo cria um arraystack que guarda os '(','{'e'['. Com o ciclo for percorremos a string e ao encontrar o carater '(' ou '{' ou '[' faz o stack.push(inic).
-     * Quando encontrar ')' ou '}' ou ']' faz o stack.top() para  ver o objeto que esta no topo da lista e verificar se ha integridade com o parentese, caso haja faz o stack.pop() que 
+     * Quando encontrar ')' ou '}' ou ']' faz o stack.top() para  ver o objeto que esta no topo da lista e verificar se ha integridade com o parentesis, caso haja faz o stack.pop() que 
      * remover o objeto que esta no topo da lista.
      * @param str string para verificar a integridade
      * @return string - se stack estiver vazia retorna true se não retorna false.
