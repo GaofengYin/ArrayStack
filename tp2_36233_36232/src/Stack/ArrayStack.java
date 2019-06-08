@@ -23,9 +23,9 @@ public class ArrayStack<E> implements Stack<E> {
     public ArrayStack() {
         this(CAPACITY);
     }
-    // construtor da stack com a capacidade determinada pela pessoa 
+
     /**
-     * construtor da stack com a capacidade determinada
+     * construtor da stack com a capacidade determinada pelo utilizador
      * @param capacity capacidade da stack
      */
     public ArrayStack(int capacity) {
